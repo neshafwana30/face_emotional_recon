@@ -2,7 +2,7 @@ import cv2
 from fer import FER
 
 # ===== Inisialisasi FER =====
-detector = FER(mtcnn=False)  # ga pakai MTCNN, biar cepat dan stabil
+detector = FER(mtcnn=True)  # ga pakai MTCNN, biar cepat dan stabil
 
 # ===== Inisialisasi Face Recognizer =====
 recognizer = cv2.face.LBPHFaceRecognizer.create()
@@ -18,7 +18,6 @@ emoji_map = {
     'sad': cv2.imread('emoji/sad.png', cv2.IMREAD_UNCHANGED),
     'angry': cv2.imread('emoji/angry.png', cv2.IMREAD_UNCHANGED),
     'fear': cv2.imread('emoji/fear.png', cv2.IMREAD_UNCHANGED),
-    'disgust': cv2.imread('emoji/disgust.png', cv2.IMREAD_UNCHANGED),
     'surprise': cv2.imread('emoji/surprised.png', cv2.IMREAD_UNCHANGED)
 }
 
