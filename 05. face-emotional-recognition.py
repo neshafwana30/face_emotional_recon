@@ -18,6 +18,7 @@ emoji_map = {
     'sad': cv2.imread('emoji/sad.png', cv2.IMREAD_UNCHANGED),
     'angry': cv2.imread('emoji/angry.png', cv2.IMREAD_UNCHANGED),
     'fear': cv2.imread('emoji/fear.png', cv2.IMREAD_UNCHANGED),
+    'disgust': cv2.imread('emoji/disgust.png', cv2.IMREAD_UNCHANGED),
     'surprise': cv2.imread('emoji/surprised.png', cv2.IMREAD_UNCHANGED)
 }
 
