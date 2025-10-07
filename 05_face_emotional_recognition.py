@@ -7,7 +7,8 @@ detector = FER(mtcnn=True)  # ga pakai MTCNN, biar cepat dan stabil
 # ===== Inisialisasi Face Recognizer =====
 recognizer = cv2.face.LBPHFaceRecognizer.create()
 recognizer.read("face-model.yml")
-faceCascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
+faceCascade = cv2.CascadeClassifier(cv2.data.haarcascades + 
+                    "haarcascade_frontalface_default.xml")
 
 font = cv2.FONT_HERSHEY_COMPLEX
 names = ['None', 'Shafwa', 'Auliya', 'Jobi']
@@ -18,7 +19,8 @@ emoji_map = {
     'sad': cv2.imread('emoji/sad.png', cv2.IMREAD_UNCHANGED),
     'angry': cv2.imread('emoji/angry.png', cv2.IMREAD_UNCHANGED),
     'fear': cv2.imread('emoji/fear.png', cv2.IMREAD_UNCHANGED),
-    'surprise': cv2.imread('emoji/surprised.png', cv2.IMREAD_UNCHANGED)
+    'surprise': cv2.imread('emoji/surprised.png', cv2.IMREAD_UNCHANGED),
+    'disgust': cv2.imread('emoji/disgusted.png', cv2.IMREAD_UNCHANGED),
 }
 
 def overlay_emoji(frame, emoji, x, y, size=70):

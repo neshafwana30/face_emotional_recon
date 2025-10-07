@@ -8,7 +8,7 @@ font = cv2.FONT_HERSHEY_COMPLEX
 
 
 id = 0
-names = ['None', 'Shafwa', 'Auliya'] # add names according to id
+names = ['None', 'Shafwa', 'Auliya', 'Jobi'] # add names according to id
 cap = cv2.VideoCapture(1, cv2.CAP_DSHOW)  # tambahkan cv2.CAP_DSHOW
 
 while True:
